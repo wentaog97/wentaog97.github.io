@@ -1,0 +1,15 @@
+/* GitHub Pages candidate: Slate, with consistent project rows. */
+html{scroll-padding-top:24px}
+.theme-slate .header{height:100px}
+.theme-slate .hero{padding-top:32px}
+.theme-slate .project-grid{align-items:center}
+.theme-slate .project-visual{width:100%;margin:0}
+.theme-slate .project-visual img{display:block;width:100%;height:auto;object-fit:contain;object-position:center}
+.theme-slate .game-cover{display:flex;justify-content:center;align-items:center;background:#f2f0e8;padding:18px}
+.theme-slate .game-cover img{width:auto;max-width:100%;height:320px;max-height:320px}
+.theme-slate .visual-chess .image-link{display:flex;justify-content:center;align-items:center;background:#ece8e8;padding:18px 0;min-height:275px}
+.theme-slate .visual-chess img{width:100%;max-height:320px;object-fit:contain}
+.theme-slate .visual-phylip{background:#edf2f7}
+.theme-slate .project-heading{align-items:center}
+@media(max-width:780px){.theme-slate .project-grid{grid-template-columns:1fr}.theme-slate .game-cover img{height:310px}.theme-slate .visual-chess .image-link{min-height:0;padding:10px 0}}
+@media(max-width:550px){.theme-slate .header{height:88px}.theme-slate .hero{padding-top:24px}.theme-slate .project-type{margin-left:23px}.theme-slate .game-cover img{height:270px}.theme-slate .game-cover{padding:15px}}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141b2b">
+  <title>Wentao Gao — Software Developer</title>
+  <meta name="description" content="Software projects by Wentao Gao: VR interaction, biosignal tools, distributed computing, and games. Based in the Seattle area.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141b2b'/%3E%3Cpath d='M12 18l9 28 11-19 11 19 9-28' fill='none' stroke='%23c6f46d' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="directions.css">
+  <link rel="stylesheet" href="calm.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="theme-slate">
+  <a class="skip" href="#work">Skip to projects</a>
+  <header class="header wrap">
+    <a class="wordmark" href="#top" aria-label="Wentao Gao, home">WG<span>Wentao Gao</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-resume" href="assets/Wentao-Gao-Resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="intro-title">
+      <div class="eyebrow"><span class="dash"></span> SOFTWARE DEVELOPMENT · SEATTLE AREA</div>
+      <h1 id="intro-title">Hi, I’m Wentao.</h1>
+      <div class="hero-bottom"><p>I’m a computer science graduate who enjoys building games, useful tools, and software that works with physical devices. Here are a few things I’ve made through research, school, and a game jam.</p><a class="button dark" href="#work">View projects</a></div>
+      <div class="hero-foot"><span>MS, Computer Science & Software Engineering</span><span>University of Washington Bothell · 2025</span></div>
+    </section>
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head"><h2 id="work-title">Selected work</h2><span>ENGINEERING / TOOLS / PLAY</span></div>
+      <article class="project" id="myo-vr">
+        <div class="project-heading"><span class="index">01</span><h3>Myo VR</h3><span class="project-type">MASTER’S CAPSTONE</span></div>
+        <div class="project-grid">
+          <figure class="project-visual visual-vr media-frame">
+            <div class="visual-top"><span>FROM THE CAPSTONE DEMO</span><span>MYO / VR</span></div>
+            <video class="demo-video" controls muted playsinline preload="metadata" poster="assets/myo-vr-demo.png" width="1280" height="720" aria-label="Myo VR capstone demonstration: hand gestures, arm movement, and punching a virtual bag" aria-describedby="demo-description"><source src="assets/myo-vr-demo-clip.mp4" type="video/mp4"><p>Your browser does not support this video. <a href="assets/myo-vr-demo-clip.mp4">Open the demonstration clip</a>.</p></video>
+            <div class="mini-pipeline" aria-label="System flow"><span>Muscle signals</span><span>Gesture model</span><span>Unity interaction</span></div>
+            <figcaption class="visual-caption" id="demo-description">Capstone demo: hand gestures, arm movement, and the punching bag. 35 seconds, original speed, no audio.</figcaption>
+          </figure>
+          <div class="project-copy"><p class="lead">Controlling a virtual arm with muscle signals.</p><p>A master’s capstone exploring EMG as input for virtual-limb rehabilitation research.</p><p>I built the gesture-recording and model-training workflow, connected it to Unity, and implemented virtual-hand interactions with camera-based arm tracking.</p>
+            <ul class="tags" aria-label="Myo VR technologies"><li>Python</li><li>Unity / C#</li><li>Machine learning</li><li>BLE</li></ul>
+            <a class="text-link" href="https://github.com/wentaog97/unity-vr-limb" target="_blank" rel="noopener">Explore the source</a>
+          </div>
+        </div>
+      </article>
+      <article class="project" id="myopanel">
+        <div class="project-heading"><span class="index">02</span><h3>MyoPanel</h3><span class="project-type">OPEN-SOURCE RESEARCH TOOL</span></div>
+        <div class="project-grid">
+          <figure class="project-visual visual-panel media-frame">
+            <div class="visual-top"><span>FROM DEVICE TO DATASET</span><span>MYOPANEL</span></div>
+            <a class="image-link" href="assets/myopanel-emg.jpeg" target="_blank" rel="noopener" aria-label="Open full-size MyoPanel screenshot"><img src="assets/myopanel-emg.jpeg" width="2880" height="1594" loading="lazy" alt="MyoPanel desktop application showing eight live EMG plots, labeled recording controls, and IMU orientation visualization."></a>
+            <div class="mini-pipeline"><span>Connect</span><span>Inspect signals</span><span>Record + export</span></div>
+            <figcaption class="visual-caption">Live EMG plots and recording controls. Open the image for a closer look.</figcaption>
+          </figure>
+          <div class="project-copy"><p class="lead">A desktop tool for collecting biosignals.</p><p>MyoPanel connects to a Myo armband to display live muscle signals and record labeled datasets.</p><p>I built the Python application for my research workflow, then added hand-landmark capture at the request of other lab members.</p>
+            <ul class="tags" aria-label="MyoPanel technologies"><li>Python</li><li>PySide6</li><li>Bleak</li><li>PyQtGraph</li><li>MediaPipe</li></ul>
+            <a class="text-link" href="https://github.com/wentaog97/myo-panel" target="_blank" rel="noopener">Explore the source</a>
+          </div>
+        </div>
+      </article>
+      <article class="project" id="phylip">
+        <div class="project-heading"><span class="index">03</span><h3>Parallel PHYLIP</h3><span class="project-type">GRADUATE COURSE PROJECT</span></div>
+        <div class="project-grid">
+          <figure class="project-visual visual-phylip media-frame"><img src="assets/phylip-overview.svg" width="960" height="540" loading="lazy" alt="Conceptual pipeline: DNA sequences are compared in pairs to form a distance matrix, then clustered into a tree."><figcaption class="visual-caption">Pipeline overview: pairwise DNA distances followed by UPGMA clustering.</figcaption></figure>
+          <div class="project-copy"><p class="lead">Exploring where parallel computing helps.</p><p>A three-person course project comparing DNA-distance calculation and phylogenetic-tree clustering across computing frameworks.</p><p>I implemented the Java/Spark versions of both stages and contributed to the team’s MASS implementation.</p><ul class="tags" aria-label="Parallel PHYLIP technologies"><li>Java</li><li>Apache Spark</li><li>MASS</li><li>Distributed computing</li></ul><a class="text-link" href="https://github.com/wentaog97/parellel-phygen" target="_blank" rel="noopener">View project repository</a></div>
+        </div>
+      </article>
+      <article class="project" id="cooked-raw">
+        <div class="project-heading"><span class="index">04</span><h3>Cooked Raw</h3><span class="project-type">PLAYABLE BROWSER GAME</span></div>
+        <div class="project-grid">
+          <figure class="project-visual visual-game media-frame">
+            <div class="visual-top"><span>GAMEDEV.JS JAM 2022</span><span>TWO WEEKS / TWO PEOPLE</span></div>
+            <a class="image-link game-cover" href="https://wentaog.itch.io/cooked-raw" target="_blank" rel="noopener" aria-label="Play Cooked Raw on itch.io"><img src="assets/cooked-raw-cover.png" width="588" height="562" loading="lazy" alt="Cooked Raw cover art: a pixel-art chef holding a cleaver faces a walking steak."></a>
+            <figcaption class="visual-caption">Cover art from our released game. Game implementation by me; art by my collaborator.</figcaption>
+          </figure>
+          <div class="project-copy"><p class="lead">A cooking-and-combat browser game.</p><p>Made with an artist for Gamedev.js Jam 2022. Players gather ingredients from enemies and combine them into dishes.</p><p>I implemented the gameplay, enemies, recipes, power-ups, menus, and tutorial. We scoped it down to three levels and shipped within two weeks.</p><p class="project-note">11th overall · 3rd for theme · 18 ratings</p>
+            <ul class="tags" aria-label="Cooked Raw technologies and context"><li>GDevelop</li><li>HTML5</li><li>Game design</li><li>Team of two</li></ul>
+            <div class="project-links"><a class="button dark" href="https://wentaog.itch.io/cooked-raw" target="_blank" rel="noopener">Play Cooked Raw</a><a class="text-link" href="https://itch.io/jam/gamedevjs-2022/rate/1503197" target="_blank" rel="noopener">Game jam entry</a></div>
+          </div>
+        </div>
+      </article>
+      <article class="project" id="chess">
+        <div class="project-heading"><span class="index">05</span><h3>Unity Chess</h3><span class="project-type">PERSONAL PROJECT</span></div>
+        <div class="project-grid">
+          <figure class="project-visual visual-chess media-frame"><a class="image-link" href="assets/unity-chess.jpg" target="_blank" rel="noopener" aria-label="Open the Unity Chess screenshot"><img src="assets/unity-chess.jpg" width="914" height="512" loading="lazy" alt="Unity Chess showing the board, turn indicator, undo and reset controls, and computer-player options."></a><figcaption class="visual-caption">The chess interface, with local play and basic computer-player options.</figcaption></figure>
+          <div class="project-copy"><p class="lead">Implementing chess rules and game state.</p><p>A Unity/C# chess project with legal-move generation, board-state management, and a basic computer opponent.</p><p>I used move-count comparisons to investigate special-rule bugs, including en passant and castling.</p><ul class="tags" aria-label="Unity Chess technologies"><li>Unity / C#</li><li>Game logic</li><li>Testing</li></ul><a class="text-link" href="https://github.com/wentaog97/ChessEngine-Unity" target="_blank" rel="noopener">View source and project notes</a></div>
+        </div>
+      </article>
+    </section>
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div><p class="eyebrow">BACKGROUND</p><h2 id="about-title">A bit about me.</h2></div>
+      <div class="about-copy"><p>I completed my MS in Computer Science & Software Engineering at UW Bothell in December 2025. My projects span sensing, machine learning, desktop tooling, and games.</p><p>I enjoy the work between components: getting data from a device, making it useful, and turning it into something a person can interact with.</p><p>In my current IT support role with Zoneberation, assigned to ByteDance, I diagnose conference-room equipment failures, restore functionality, and document issues for escalation.</p><a class="text-link" href="assets/Wentao-Gao-Resume.pdf" target="_blank" rel="noopener">Read my resume</a></div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">CONTACT</p><h2 id="contact-title">Get in touch.</h2><p>I’m interested in software engineering opportunities and teams where I can contribute, learn, and keep building.</p></div><a class="button light" href="mailto:wentaogaoseattle@gmail.com">Email me</a></div></section>
+  </main>
+  <footer class="wrap footer"><span>Wentao Gao · Seattle area</span><div><a href="https://github.com/wentaog97" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/wentaogao/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:wentaogaoseattle@gmail.com">Email</a></div><a href="#top">Back to top</a></footer>
+</body>
+</html>
