@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="t d">
+  <title id="t">From DNA sequences to a phylogenetic tree</title>
+  <desc id="d">Conceptual overview of pairwise sequence comparisons, a distance matrix, and clustering. This is a diagram, not measured output.</desc>
+  <rect width="960" height="540" fill="#edf2f7"/>
+  <g font-family="Arial,sans-serif" fill="#36506b">
+    <text x="62" y="65" font-size="17" letter-spacing="2">DNA DISTANCE + UPGMA</text>
+    <text x="62" y="119" font-size="32">Independent comparisons.</text>
+    <text x="62" y="161" font-size="32">Dependent clustering.</text>
+  </g>
+  <g fill="#fff" stroke="#c9d6e2" stroke-width="2">
+    <rect x="62" y="210" width="236" height="190" rx="12"/>
+    <rect x="362" y="210" width="236" height="190" rx="12"/>
+    <rect x="662" y="210" width="236" height="190" rx="12"/>
+  </g>
+  <g font-family="monospace" font-size="21" fill="#47647e">
+    <text x="90" y="262">ACGTACGT…</text><text x="90" y="299">ACTTACGT…</text><text x="90" y="336">TCGTACGA…</text><text x="90" y="373">ACGTTCGT…</text>
+  </g>
+  <g>
+    <rect x="403" y="246" width="32" height="32" fill="#dfe8ef"/>
+    <rect x="441" y="246" width="32" height="32" fill="#9bb4c8"/>
+    <rect x="479" y="246" width="32" height="32" fill="#c0d0dd"/>
+    <rect x="517" y="246" width="32" height="32" fill="#6d8da7"/>
+    <rect x="403" y="284" width="32" height="32" fill="#9bb4c8"/>
+    <rect x="441" y="284" width="32" height="32" fill="#dfe8ef"/>
+    <rect x="479" y="284" width="32" height="32" fill="#6d8da7"/>
+    <rect x="517" y="284" width="32" height="32" fill="#9bb4c8"/>
+    <rect x="403" y="322" width="32" height="32" fill="#c0d0dd"/>
+    <rect x="441" y="322" width="32" height="32" fill="#6d8da7"/>
+    <rect x="479" y="322" width="32" height="32" fill="#dfe8ef"/>
+    <rect x="517" y="322" width="32" height="32" fill="#c0d0dd"/>
+    <rect x="403" y="360" width="32" height="32" fill="#6d8da7"/>
+    <rect x="441" y="360" width="32" height="32" fill="#9bb4c8"/>
+    <rect x="479" y="360" width="32" height="32" fill="#c0d0dd"/>
+    <rect x="517" y="360" width="32" height="32" fill="#dfe8ef"/>
+  </g>
+  <g fill="none" stroke="#567894" stroke-width="4" stroke-linejoin="round"><path d="M698 302h34m0-47v100m0-100h60m-60 100h60m0-126v52m0 46v55m0-153h56m-56 52h56m-56 46h56m-56 55h56"/></g>
+  <g fill="#8fabbe"><circle cx="852" cy="229" r="7"/><circle cx="852" cy="281" r="7"/><circle cx="852" cy="327" r="7"/><circle cx="852" cy="382" r="7"/></g>
+  <g fill="none" stroke="#819caf" stroke-width="3"><path d="M315 305h30m-8-8 8 8-8 8M615 305h30m-8-8 8 8-8 8"/></g>
+  <g font-family="Arial,sans-serif" font-size="19" text-anchor="middle" fill="#47647e"><text x="180" y="441">DNA sequences</text><text x="480" y="441">Pairwise distances</text><text x="780" y="441">Clustered tree</text></g>
+  <text x="62" y="502" font-family="Arial,sans-serif" font-size="14" fill="#6d8092" letter-spacing="1">CONCEPTUAL PIPELINE · COURSE PROJECT</text>
+</svg>
